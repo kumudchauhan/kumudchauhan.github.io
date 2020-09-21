@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Kumud Chauhan's Personal Page"
 title_separator          : "-"
 name                     : &name "Kumud Chauhan"
-description              : &description "Data Scientist | Former Banker | NEU Alumni"
+description              : &description "Data Scientist "
 url                      : https://kumudchauhan.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "kumudchauhan/kumudchauhan.github.io"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/kumudchauhan/"
+  github           : "kumudchauhan"
   google_plus      :
   keybase          :
   instagram        :
