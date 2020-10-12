@@ -5,12 +5,11 @@ description: Data Scientist | Former Banker | NEU Alumni
 keywords: Kumud Chauhan, Data Scientist, Former Banker, NEU Alumni
 ---
 
-I am a data science volunteer at [FightPandemics](https://fightpandemics.com/), where I'm working on several projects related to building an Altruistic Platform. I mainly contribute to chatbot development, data pipeline design and data analysis projects.
+I am a motivated, result-oriented, and enthusiastic data science professional with a keen interest in Machine Learning, Natural Language Processing. Currently, I am working as a Data Science and Business Intelligence volunteer at [FightPandemics](https://fightpandemics.com/), I'm also collaborating with the Product and Engineering team and working on multiple projects related to building an Altruistic Platform. I mainly contribute to [chatbot development](https://github.com/FightPandemics/FightPandemics-Telegram/tree/dev), data pipeline design, and data analysis projects.
 
+I earned my Master's degree in Analytics with Statistical Modeling concentration from [Northeastern University](https://www.northeastern.edu/), Boston. During my masters, I also worked as a Graduate Teaching Assistant for two sections of the predictive Analytics course. 
 
-I earned my Masters degree in Analytics with Statistical Modeling concentration from [Northeastern University](https://www.northeastern.edu/), Boston. During my masters I also worked as Graduate Teaching Assistant for predictive Analytics course and had a great opportunity to work with two amazing professors at NEU.
-
-Before joining grad school, I worked as a Credit Analytics Manager with [Bank of Baroda](https://www.bankofbaroda.in/),India. 
+Before joining grad school, I worked as a Credit Analytics Manager with [Bank of Baroda](https://www.bankofbaroda.in/), India. I lead a team of 7 people and implemented various financial inclusion initiatives in Rural India. I worked with cross-functional teams and successfully executed multiple financial campaigns to promote digital banking and loan products. I automated multiple manual tasks by applying data analytics and predictive modeling. 
 
 ---
 
