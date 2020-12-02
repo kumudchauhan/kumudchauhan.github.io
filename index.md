@@ -8,7 +8,7 @@ keywords: Kumud Chauhan, Data Scientist, Former Banker, NEU Alumni
 
 I am a motivated, and enthusiastic data science professional with a keen interest in Data Analysis, Visualization and Machine Learning. I am proficient in  Python, SQL, R, Tableau, Statistical Analysis, Predictive Modeling, Machine Learning (ML), Natural Language Processing (NLP), Deep Learning. 
 
-Currently, I am working as a *Data Science and Business Intelligence* volunteer at [FightPandemics](https://fightpandemics.com/), where I collaborate with Product and Engineering teams on multiple projects related to building an Altruistic Platform. I mainly contribute to [chatbot development](https://github.com/FightPandemics/FightPandemics-Telegram/tree/dev), data pipeline design, and data analysis projects.
+Currently, I am working as a *Data Scientist* at [FightPandemics](https://fightpandemics.com/), where I collaborate with Product and Engineering teams on multiple projects related to building an Altruistic Platform. I mainly contribute to a multilingual content moderation system, [chatbot](https://github.com/FightPandemics/FightPandemics-Telegram/tree/dev), data pipeline design, and data analysis projects.
 
 I earned my **Master's degree in Analytics with Statistical Modeling** concentration from [Northeastern University](https://www.northeastern.edu/), Boston. During my masters, I also worked as a Teaching Assistant for the Predictive Analytics graduate level course. Before joining grad school, I worked as a **Credit Analytics Manager** with [Bank of Baroda](https://www.bankofbaroda.in/), India. 
 
