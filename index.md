@@ -4,13 +4,11 @@ title: Kumud Chauhan
 description: Data Scientist | Data Analyst | Former Banker | NEU Alumni
 keywords: Kumud Chauhan, Data Scientist, Former Banker, NEU Alumni
 ---
-##### Data Scientist | Data Analyst | Former Banker | NEU Alumni 
+##### Data Scientist | Former Banker | NEU Alumni 
 
 I am a motivated, and enthusiastic data science professional with a keen interest in Data Analysis, Visualization and Machine Learning. I am proficient in  Python, SQL, R, Tableau, Statistical Analysis, Predictive Modeling, Machine Learning (ML), Natural Language Processing (NLP), Deep Learning. 
 
-Currently, I am working as a *Data Scientist* at [FightPandemics](https://fightpandemics.com/), where I collaborate with Product and Engineering teams on multiple projects related to building an Altruistic Platform. I mainly contribute to a multilingual content moderation system, [chatbot](https://github.com/FightPandemics/FightPandemics-Telegram/tree/dev), data pipeline design, and data analysis projects.
-
-I earned my **Master's degree in Analytics with Statistical Modeling** concentration from [Northeastern University](https://www.northeastern.edu/), Boston. During my masters, I also worked as a Teaching Assistant for the Predictive Analytics graduate level course. Before joining grad school, I worked as a **Credit Analytics Manager** with [Bank of Baroda](https://www.bankofbaroda.in/), India. 
+Currently, I am working as a *Data Scientist* at [Fetch Rewards](https://www.fetchrewards.com/). I earned my **Master's degree in Analytics with Statistical Modeling** concentration from [Northeastern University](https://www.northeastern.edu/), Boston. During my masters, I also worked as a Teaching Assistant for the Predictive Analytics graduate level course. Before joining grad school, I worked as a **Credit Analytics Manager** with [Bank of Baroda](https://www.bankofbaroda.in/), India. 
 
 I occasionally contribute to Kaggle and love to dive-deep into unexplored datasets. Here is one of my blogpost on [Fake News detection](https://www.kaggle.com/kumudchauhan/fake-news-analysis-and-classification) (**10k+ views**)
 
