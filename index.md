@@ -12,8 +12,8 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
       <h1>Kumud Chauhan</h1>
       <p style="font-size: 1.1rem; font-weight: 500; color: #475569; margin-bottom: 0.25rem;">Senior Data Scientist | Technical Product Owner</p>
       <p class="tagline" style="font-size: 1.05rem; color: #475569; font-style: normal;">
-        End-to-end ownership of projects — from stakeholder alignment to team leadership to production delivery.<br>
         Proven ability to turn vague, ambiguous problems into production-ready solutions.<br>
+        End-to-end ownership of projects — from inception to production delivery.<br>
         Deep expertise in building impactful analytical and AI/ML systems at scale.<br>
         Cross-domain experience spanning tech and banking industries.
       </p>
