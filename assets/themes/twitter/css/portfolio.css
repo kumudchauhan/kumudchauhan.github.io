@@ -80,9 +80,9 @@ img {
 }
 
 .nav-menu a {
-  color: #64748b;
-  font-size: 0.875rem;
-  font-weight: 500;
+  color: #334155;
+  font-size: 0.95rem;
+  font-weight: 600;
   padding: 0.5rem 0.9rem;
   border-radius: 6px;
   transition: all 0.2s ease;
