@@ -510,12 +510,10 @@ section {
 }
 
 .case-study-section h4 {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: #94a3b8;
-  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
 }
 
 .case-study-section p {
@@ -527,6 +525,7 @@ section {
 /* ===== About Page ===== */
 .about-content {
   max-width: 700px;
+  margin: 0 auto;
 }
 
 .about-content p {
