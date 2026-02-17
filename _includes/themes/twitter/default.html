@@ -6,52 +6,92 @@
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/css/my_custom_css.css" rel="stylesheet" type="text/css" media="all">
-
-    <!-- Le fav and touch icons - this is where you can add a little icon that will show up in the address bar next to the addrss adn in search history next to website name
-    <link rel="SHORTCUT ICON" href="{{ BASE_PATH }}/assets/me.ico"/>
-    -->
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
+    <!-- Portfolio CSS -->
+    <link href="{{ ASSET_PATH }}/css/portfolio.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-              <li><a href="{{ BASE_PATH }}/pages/projects.html">Projects</a></li>
-              <li><a href="https://www.linkedin.com/in/kumudneu">Linkedin</a></li>
-              <li><a href="https://github.com/kumudchauhan">Github</a></li>
-          </ul>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a class="nav-brand" href="{{ HOME_PATH }}">Kumud Chauhan</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="{{ BASE_PATH }}/pages/about.html">About</a></li>
+          <li><a href="{{ BASE_PATH }}/pages/projects.html">Projects</a></li>
+          <li><a href="https://www.linkedin.com/in/kumudneu" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/kumudchauhan" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/kumudneu" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/kumudchauhan" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.kaggle.com/kumudchauhan" target="_blank" rel="noopener">Kaggle</a>
+          <a href="mailto:kumudchauhan30@gmail.com">Email</a>
         </div>
+        <p class="footer-copy">&copy; {{ site.time | date: '%Y' }} Kumud Chauhan</p>
       </div>
-    </div>
+    </footer>
 
-    <div class="container-narrow">
+    <!-- Scripts -->
+    <script>
+      // Mobile menu toggle
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+      });
 
-      <div class="content">
-        {{ content }}
-      </div>
+      // Close menu on link click
+      document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+          navToggle.classList.remove('active');
+        });
+      });
 
-      <hr>
+      // Navbar background on scroll
+      window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
 
-    </div>
+      // Scroll reveal
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 
     {% include JB/analytics %}
   </body>

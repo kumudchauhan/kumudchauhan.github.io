@@ -9,10 +9,12 @@ highlighter: rouge
 # so be sure to set them if your theme uses them.
 #
 title : Kumud Chauhan
+description : Senior Data Scientist | Turning data into products
 author :
   name : Kumud Chauhan
-  email : chauhan.ku@northeastern.edu
+  email : kumudchauhan30@gmail.com
   github : https://github.com/kumudchauhan
+  linkedin : https://www.linkedin.com/in/kumudneu
 
 production_url : https://kumudchauhan.github.io/
 
