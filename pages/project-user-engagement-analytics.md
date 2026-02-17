@@ -18,7 +18,7 @@ description: Analytics framework for measuring and improving user engagement at 
         <span>Python</span>
         <span>pandas</span>
         <span>A/B Testing</span>
-        <span>Looker</span>
+        <span>Tableau</span>
         <span>Snowflake</span>
       </div>
 
