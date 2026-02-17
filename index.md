@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 title: Kumud Chauhan
-description: Senior Data Scientist | Turning data into products
+description: Senior Data Scientist | Technical Product Owner
 keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learning, Python
 ---
 
@@ -10,8 +10,9 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
     <div class="hero-text">
       <p class="greeting">Hi, I'm</p>
       <h1>Kumud Chauhan</h1>
-      <p style="font-size: 1.1rem; font-weight: 500; color: #475569; margin-bottom: 0.25rem;">Senior Data Scientist</p>
+      <p style="font-size: 1.1rem; font-weight: 500; color: #475569; margin-bottom: 0.25rem;">Senior Data Scientist | Technical Product Owner</p>
       <p class="tagline" style="font-size: 1.05rem; color: #475569; font-style: normal;">
+        End-to-end ownership of projects — from stakeholder alignment to team leadership to production delivery.<br>
         Proven ability to turn vague, ambiguous problems into production-ready solutions.<br>
         Deep expertise in building impactful analytical and AI/ML systems at scale.<br>
         Cross-domain experience spanning tech and banking industries.
