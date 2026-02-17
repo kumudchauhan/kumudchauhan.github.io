@@ -38,5 +38,16 @@ description: Kumud Chauhan's Data Science projects
       <a href="/pages/project-semantic-search.html" style="font-size: 0.9rem; font-weight: 500;">Read more &rarr;</a>
     </div>
 
+    <div class="case-study reveal">
+      <h3><a href="/pages/project-fake-news.html">Fake News Detection</a></h3>
+      <div class="case-study-meta">
+        <span>Python</span>
+        <span>NLP</span>
+        <span>Scikit-learn</span>
+      </div>
+      <p style="color: #475569; line-height: 1.7; margin-bottom: 0.75rem;">Text mining, EDA, and predictive modeling on the Buzzfeed news dataset to identify patterns distinguishing fake from real news. 31k+ views on Kaggle.</p>
+      <a href="/pages/project-fake-news.html" style="font-size: 0.9rem; font-weight: 500;">Read more &rarr;</a>
+    </div>
+
   </div>
 </section>
