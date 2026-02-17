@@ -39,6 +39,20 @@ description: Kumud Chauhan's Data Science projects
     </div>
 
     <div class="case-study reveal">
+      <h3><a href="/pages/project-user-engagement-analytics.html">User Engagement & Retention Analytics</a></h3>
+      <div class="case-study-meta">
+        <span>SQL</span>
+        <span>Python</span>
+        <span>pandas</span>
+        <span>A/B Testing</span>
+        <span>Tableau</span>
+        <span>Snowflake</span>
+      </div>
+      <p style="color: #475569; line-height: 1.7; margin-bottom: 0.75rem;">Built a unified engagement and retention analytics framework for millions of active users. Designed composite engagement scoring, cohort-based retention analysis, churn prediction models, and the experimentation layer for A/B testing product changes.</p>
+      <a href="/pages/project-user-engagement-analytics.html" style="font-size: 0.9rem; font-weight: 500;">Read more &rarr;</a>
+    </div>
+
+    <div class="case-study reveal">
       <h3><a href="/pages/project-fake-news.html">Fake News Detection</a></h3>
       <div class="case-study-meta">
         <span>Python</span>
