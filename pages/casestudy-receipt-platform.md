@@ -97,7 +97,7 @@ description: Product strategy and technical leadership case study at Fetch Rewar
         <h4>Roadmap & Execution</h4>
         <p><strong style="color: #0f172a;">Phase 1: Research & Foundation</strong></p>
         <ul style="list-style: none; padding: 0; margin-top: 0.25rem;">
-          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Research NLP models and benchmarking for receipt extraction</li>
+          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• R&D and benchmarking of ML models for information extraction</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Build placeholder model to enable parallel infrastructure development</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Collaboration with mobile engineers for IMAP integrations to retrieve HTML receipts</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• PII masking pipeline</li>
