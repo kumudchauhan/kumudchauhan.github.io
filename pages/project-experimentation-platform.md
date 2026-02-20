@@ -28,10 +28,10 @@ description: Building a culture of experimentation for product decisions
 
       <div class="case-study-section">
         <h4>Approach</h4>
-        <p><strong style="color: #0f172a;">Experimentation Design</strong>, established the end-to-end experimentation process: hypothesis definition, primary and guardrail metric selection, sample size and power calculations, randomization strategy, and pre-registration of analysis plans to avoid p-hacking.</p>
-        <p><strong style="color: #0f172a;">Statistical Rigor</strong>, implemented proper statistical methodology including significance thresholds, minimum detectable effect sizing, sequential testing for early stopping decisions, and segment-level analysis to detect heterogeneous treatment effects across user cohorts.</p>
-        <p><strong style="color: #0f172a;">Guardrail Metrics</strong>, defined a set of company-wide guardrail metrics (e.g., daily scan rate, session frequency, uninstall rate) that every experiment had to monitor, ensuring that optimizing one metric didn't silently degrade another.</p>
-        <p><strong style="color: #0f172a;">Automated Reporting</strong>, built experiment dashboards that tracked real-time results, confidence intervals, and metric movements. Enabled product managers to self-serve experiment status without waiting for analyst review.</p>
+        <p><strong style="color: #0f172a;">Experimentation Design</strong>: established the end-to-end experimentation process: hypothesis definition, primary and guardrail metric selection, sample size and power calculations, randomization strategy, and pre-registration of analysis plans to avoid p-hacking.</p>
+        <p><strong style="color: #0f172a;">Statistical Rigor</strong>: implemented proper statistical methodology including significance thresholds, minimum detectable effect sizing, sequential testing for early stopping decisions, and segment-level analysis to detect heterogeneous treatment effects across user cohorts.</p>
+        <p><strong style="color: #0f172a;">Guardrail Metrics</strong>: defined a set of company-wide guardrail metrics (e.g., daily scan rate, session frequency, uninstall rate) that every experiment had to monitor, ensuring that optimizing one metric didn't silently degrade another.</p>
+        <p><strong style="color: #0f172a;">Automated Reporting</strong>: built experiment dashboards that tracked real-time results, confidence intervals, and metric movements. Enabled product managers to self-serve experiment status without waiting for analyst review.</p>
       </div>
 
       <div class="case-study-section">

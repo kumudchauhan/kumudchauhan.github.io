@@ -24,10 +24,10 @@ description: Product strategy and technical leadership case study at Fetch Rewar
         <h4>The Business Problem</h4>
         <p>Fetch's receipt processing was handled by a third-party vendor, creating major issues:</p>
         <ul style="list-style: none; padding: 0; margin-top: 0.75rem;">
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">High recurring operational cost</strong>, vendor pricing scaled with receipt volume, increasingly expensive as the user base grew</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Limited control over accuracy and roadmap</strong>, no ability to iterate on extraction logic or prioritize improvements that mattered to our business</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Slow iteration cycles</strong>, every improvement request or addition of a new partner/retailer went through the vendor's timeline, not ours</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Poor customer support</strong>, vendor dependency created bottlenecks in resolving user-facing issues quickly</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">High recurring operational cost</strong>: vendor pricing scaled with receipt volume, increasingly expensive as the user base grew</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Limited control over accuracy and roadmap</strong>: no ability to iterate on extraction logic or prioritize improvements that mattered to our business</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Slow iteration cycles</strong>: every improvement request or addition of a new partner/retailer went through the vendor's timeline, not ours</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Poor customer support</strong>: vendor dependency created bottlenecks in resolving user-facing issues quickly</li>
         </ul>
         <p style="margin-top: 1rem;">The business needed higher accuracy, faster iteration, lower cost, and scalable infrastructure. This case study covers the product strategy and leadership perspective. For the technical deep-dive into the ML system, see <a href="/pages/project-receipt-extraction.html">Digital Receipt Information Extraction System</a>.</p>
       </div>
@@ -153,12 +153,12 @@ description: Product strategy and technical leadership case study at Fetch Rewar
       <div class="case-study-section">
         <h4>Results & Impact</h4>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Accuracy</strong>, significantly improved product match accuracy, meeting senior leadership expectations based on human evaluations on production data</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Cost</strong>, delivered multimillion-dollar annual savings by replacing third-party vendor</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Operations</strong>, reduced manual review workload through structured human-in-the-loop feedback loop</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Business</strong>, improved reward attribution reliability for 600+ brand partners, enabling higher targeting precision and improved reporting trust</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Scalability</strong>, successfully processed 1M+ receipts per day at production scale</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Innovation</strong>, innovated a new state-of-the-art algorithm for digital receipt extraction directly from unstructured HTML layout/DOM, bypassing traditional OCR pipelines completely (<a href="/pages/project-receipt-extraction.html">ML Technical Deep-Dive</a> · <a href="https://patents.google.com/patent/US11727060B1" target="_blank">US Patent</a>)</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Accuracy</strong>: significantly improved product match accuracy, meeting senior leadership expectations based on human evaluations on production data</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Cost</strong>: delivered multimillion-dollar annual savings by replacing third-party vendor</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Operations</strong>: reduced manual review workload through structured human-in-the-loop feedback loop</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Business</strong>: improved reward attribution reliability for 600+ brand partners, enabling higher targeting precision and improved reporting trust</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Scalability</strong>: successfully processed 1M+ receipts per day at production scale</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Innovation</strong>: innovated a new state-of-the-art algorithm for digital receipt extraction directly from unstructured HTML layout/DOM, bypassing traditional OCR pipelines completely (<a href="/pages/project-receipt-extraction.html">ML Technical Deep-Dive</a> · <a href="https://patents.google.com/patent/US11727060B1" target="_blank">US Patent</a>)</li>
         </ul>
       </div>
 

@@ -29,28 +29,28 @@ description: Data-driven framework for measuring and optimizing brand offer perf
       <div class="case-study-section">
         <h4>Challenges</h4>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Incrementality measurement</strong>, distinguishing between purchases driven by the offer versus purchases that would have occurred regardless is a fundamental attribution challenge</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Diverse offer mechanics</strong>, offers varied widely in structure (buy X get Y points, spend thresholds, category-level vs SKU-level), making standardized comparison difficult</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Partner reporting expectations</strong>, brand partners expected clear, defensible ROI metrics tied to actual purchase behavior, not just engagement proxies like impressions or clicks</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Incrementality measurement</strong>: distinguishing between purchases driven by the offer versus purchases that would have occurred regardless is a fundamental attribution challenge</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Diverse offer mechanics</strong>: offers varied widely in structure (buy X get Y points, spend thresholds, category-level vs SKU-level), making standardized comparison difficult</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Partner reporting expectations</strong>: brand partners expected clear, defensible ROI metrics tied to actual purchase behavior, not just engagement proxies like impressions or clicks</li>
         </ul>
       </div>
 
       <div class="case-study-section">
         <h4>Approach</h4>
-        <p><strong style="color: #0f172a;">Offer Performance Framework</strong>, designed a standardized metrics framework for measuring offer effectiveness across all campaign types. Defined core KPIs: redemption rate, cost per redemption, incremental sales lift, brand switching rate, repeat purchase rate, and customer acquisition cost for new-to-brand buyers.</p>
-        <p><strong style="color: #0f172a;">Incrementality Analysis</strong>, built a causal inference framework to measure the true incremental impact of offers. Used matched control groups (propensity score matching) and difference-in-differences methodology to isolate the effect of offer exposure from organic purchasing behavior. This gave partners defensible evidence of whether their campaigns were driving new purchases.</p>
-        <p><strong style="color: #0f172a;">Campaign Reporting & Insights</strong>, built automated campaign reporting pipelines that generated post-campaign performance reports for brand partners. Reports included redemption trends, audience composition, basket analysis (what else did offer redeemers buy), and competitive context (market share shifts during campaign period).</p>
-        <p><strong style="color: #0f172a;">Optimization Recommendations</strong>, analyzed historical campaign data to identify patterns in high-performing offers (optimal point values, timing, targeting segments, and offer structures). Provided data-backed recommendations to the partnerships team for campaign design and renewal discussions.</p>
+        <p><strong style="color: #0f172a;">Offer Performance Framework</strong>: designed a standardized metrics framework for measuring offer effectiveness across all campaign types. Defined core KPIs: redemption rate, cost per redemption, incremental sales lift, brand switching rate, repeat purchase rate, and customer acquisition cost for new-to-brand buyers.</p>
+        <p><strong style="color: #0f172a;">Incrementality Analysis</strong>: built a causal inference framework to measure the true incremental impact of offers. Used matched control groups (propensity score matching) and difference-in-differences methodology to isolate the effect of offer exposure from organic purchasing behavior. This gave partners defensible evidence of whether their campaigns were driving new purchases.</p>
+        <p><strong style="color: #0f172a;">Campaign Reporting & Insights</strong>: built automated campaign reporting pipelines that generated post-campaign performance reports for brand partners. Reports included redemption trends, audience composition, basket analysis (what else did offer redeemers buy), and competitive context (market share shifts during campaign period).</p>
+        <p><strong style="color: #0f172a;">Optimization Recommendations</strong>: analyzed historical campaign data to identify patterns in high-performing offers (optimal point values, timing, targeting segments, and offer structures). Provided data-backed recommendations to the partnerships team for campaign design and renewal discussions.</p>
       </div>
 
       <div class="case-study-section">
         <h4>Key Metrics</h4>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Redemption rate</strong>, percentage of exposed users who redeemed the offer</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Incremental sales lift</strong>, causal estimate of additional purchases driven by the campaign</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">New-to-brand rate</strong>, percentage of redeemers who had not previously purchased the brand</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Repeat purchase rate</strong>, post-campaign retention of offer redeemers</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Partner ROI</strong>, revenue attributed per dollar of offer spend</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Redemption rate</strong>: percentage of exposed users who redeemed the offer</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Incremental sales lift</strong>: causal estimate of additional purchases driven by the campaign</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">New-to-brand rate</strong>: percentage of redeemers who had not previously purchased the brand</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Repeat purchase rate</strong>: post-campaign retention of offer redeemers</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Partner ROI</strong>: revenue attributed per dollar of offer spend</li>
         </ul>
       </div>
 

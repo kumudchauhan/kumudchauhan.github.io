@@ -35,17 +35,17 @@ description: Semantic search and retrieval system using SBERT and FAISS
       <div class="case-study-section">
         <h4>Challenges</h4>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Noisy identifiers and short descriptions</strong>, receipt line items often contained abbreviated product names, partial UPC/SKU codes with trailing zeros or mismatched formats, making direct text matching unreliable</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">OCR errors in physical receipts</strong>, scanned paper receipts introduced misspellings, merged words, and missing characters, further degrading match quality</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Large, evolving taxonomy</strong>, the product catalog was continuously growing, requiring the system to generalize to new products without retraining</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Noisy identifiers and short descriptions</strong>: receipt line items often contained abbreviated product names, partial UPC/SKU codes with trailing zeros or mismatched formats, making direct text matching unreliable</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">OCR errors in physical receipts</strong>: scanned paper receipts introduced misspellings, merged words, and missing characters, further degrading match quality</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Large, evolving taxonomy</strong>: the product catalog was continuously growing, requiring the system to generalize to new products without retraining</li>
         </ul>
       </div>
 
       <div class="case-study-section">
         <h4>Approach</h4>
-        <p><strong style="color: #0f172a;">Gold Dataset</strong>, created a 50K+ stratified labeled dataset, stratified by merchant, frequency (head vs long-tail), OCR quality, and category. Defined annotation guidelines and achieved high inter-annotator agreement. This became the evaluation foundation.</p>
-        <p><strong style="color: #0f172a;">Candidate Retrieval (Recall First)</strong>, the root issue was that the correct product often wasn't even in the candidate pool. Implemented multi-strategy retrieval: deterministic rules (UPC, exact matches), fuzzy matching (Levenshtein, TF-IDF), semantic retrieval using Sentence-BERT embeddings, and FAISS approximate nearest neighbor indexing for scalable vector search.</p>
-        <p><strong style="color: #0f172a;">Ranking & Precision Optimization</strong>, built a ranking layer using cross-encoder transformer models and a feature-based gradient boosting model combining embedding similarity, token overlap, brand match, unit consistency, and merchant priors.</p>
+        <p><strong style="color: #0f172a;">Gold Dataset</strong>: created a 50K+ stratified labeled dataset, stratified by merchant, frequency (head vs long-tail), OCR quality, and category. Defined annotation guidelines and achieved high inter-annotator agreement. This became the evaluation foundation.</p>
+        <p><strong style="color: #0f172a;">Candidate Retrieval (Recall First)</strong>: the root issue was that the correct product often wasn't even in the candidate pool. Implemented multi-strategy retrieval: deterministic rules (UPC, exact matches), fuzzy matching (Levenshtein, TF-IDF), semantic retrieval using Sentence-BERT embeddings, and FAISS approximate nearest neighbor indexing for scalable vector search.</p>
+        <p><strong style="color: #0f172a;">Ranking & Precision Optimization</strong>: built a ranking layer using cross-encoder transformer models and a feature-based gradient boosting model combining embedding similarity, token overlap, brand match, unit consistency, and merchant priors.</p>
       </div>
 
       <div class="case-study-section">
@@ -53,10 +53,10 @@ description: Semantic search and retrieval system using SBERT and FAISS
         <p>The leadership goal was to increase product assignment accuracy and coverage significantly. I reframed this vague mandate into a measurable objective: maximize coverage of receipt item mapping while maintaining high precision, since incorrect brand attribution had direct billing and revenue implications.</p>
         <p>This reframing shifted the solution from "build a better classifier" to "design a calibrated retrieval and ranking system." Key evaluation metrics were redesigned around this objective:</p>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Recall@K</strong>, measuring whether the correct product appeared in the top-K candidates</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Top-1 accuracy</strong>, measuring exact match at the top rank</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">MRR (Mean Reciprocal Rank)</strong>, measuring ranking quality across candidates</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Precision at operating threshold</strong>, ensuring automation didn't introduce revenue risk</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Recall@K</strong>: measuring whether the correct product appeared in the top-K candidates</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Top-1 accuracy</strong>: measuring exact match at the top rank</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">MRR (Mean Reciprocal Rank)</strong>: measuring ranking quality across candidates</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Precision at operating threshold</strong>: ensuring automation didn't introduce revenue risk</li>
         </ul>
         <p style="margin-top: 0.75rem;">Evaluation was designed before modeling. The 50K+ stratified gold dataset served as the foundation for all offline evaluation, and shadow deployments enabled safe comparison on live traffic before production release.</p>
       </div>
