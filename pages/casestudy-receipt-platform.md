@@ -132,7 +132,7 @@ description: Product strategy and technical leadership case study at Fetch Rewar
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Technical Design Review (TDR) presentations</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Annotation team management</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• KPI monitoring</li>
-          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Maintained project Kanban board, codebase, repo, and Confluence documentation</li>
+          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Maintained project Kanban board, codebase, Bitbucket repos, and Confluence documentation</li>
           <li style="color: #475569; line-height: 1.7;">• UAT and release readiness</li>
         </ul>
       </div>
