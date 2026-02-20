@@ -24,7 +24,7 @@ description: Patented ML system for extracting key information from digital rece
 
       <div class="case-study-section">
         <h4>Business Problem</h4>
-        <p>Millions of digital receipts (emails, e-receipts) flow into Fetch daily as unstructured HTML documents. The system needed to automatically extract structured purchase data at two levels: <strong style="color: #0f172a;">item-level information</strong> (product description, price, quantity) and <strong style="color: #0f172a;">retailer-level information</strong> (retailer name, order total, store address, email, and other available metadata). Accurate extraction at both levels was critical for product matching, reward attribution, and partner reporting. For the full business context and product strategy, see the <a href="/pages/casestudy-receipt-platform.html">Product & Leadership Case Study</a>.</p>
+        <p>Millions of digital receipts (emails, e-receipts) flow into Fetch daily as unstructured HTML documents. The system needed to automatically extract structured purchase data at two levels: <strong style="color: #0f172a;">item-level information</strong> (product description, price, quantity, product number/UPC/SKU) and <strong style="color: #0f172a;">retailer-level information</strong> (retailer name, order total, store address, email, and other available metadata). Accurate extraction at both levels was critical for product matching, reward attribution, and partner reporting. For the full business context and product strategy, see the <a href="/pages/casestudy-receipt-platform.html">Product & Leadership Case Study</a>.</p>
       </div>
 
       <div class="case-study-section">
