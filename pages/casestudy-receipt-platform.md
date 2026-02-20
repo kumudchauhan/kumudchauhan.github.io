@@ -17,7 +17,7 @@ description: Product strategy and technical leadership case study at Fetch Rewar
 
       <div class="case-study-section">
         <h4>Executive Summary</h4>
-        <p>I led the product strategy and cross-functional delivery of an in-house AI-powered receipt intelligence platform that replaced a high-cost third-party vendor. The solution improved product match accuracy across thousands of retailers, restaurants, and fast food chains, reduced operational overhead, and delivered multimillion-dollar annual cost savings while supporting 10M+ users and 600+ brand partners.</p>
+        <p>At Fetch Rewards, a consumer rewards app with 10M+ users, I led the product strategy and cross-functional delivery of an in-house AI-powered receipt intelligence platform that replaced a high-cost third-party vendor. The solution improved product match accuracy across thousands of retailers, restaurants, and fast food chains, reduced operational overhead, and delivered multimillion-dollar annual cost savings while supporting 10M+ users and 600+ brand partners.</p>
       </div>
 
       <div class="case-study-section">
