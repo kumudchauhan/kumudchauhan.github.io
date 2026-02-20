@@ -6,7 +6,7 @@ description: Product strategy and technical leadership case study at Fetch Rewar
 
 <div class="page-hero">
   <h1>A Scalable AI-Powered Receipt Intelligence System</h1>
-  <p class="subtitle">Senior Data Scientist — Tech Lead | Fetch Rewards</p>
+  <p class="subtitle">Senior Data Scientist, Tech Lead | Fetch Rewards</p>
   <p style="color: #2563eb; font-size: 0.95rem; font-weight: 500; margin-top: 0.25rem;">Product Strategy · Technical Execution · Cross-Functional Delivery</p>
   <p style="color: #64748b; font-size: 0.95rem; margin-top: 0.5rem;">10M+ users · 1M+ receipts/day · 600+ brand partners</p>
 </div>
@@ -24,10 +24,10 @@ description: Product strategy and technical leadership case study at Fetch Rewar
         <h4>The Business Problem</h4>
         <p>Fetch's receipt processing was handled by a third-party vendor, creating major issues:</p>
         <ul style="list-style: none; padding: 0; margin-top: 0.75rem;">
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">High recurring operational cost</strong> — Vendor pricing scaled with receipt volume, increasingly expensive as the user base grew</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Limited control over accuracy and roadmap</strong> — No ability to iterate on extraction logic or prioritize improvements that mattered to our business</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Slow iteration cycles</strong> — Every improvement request or addition of a new partner/retailer went through the vendor's timeline, not ours</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Poor customer support</strong> — Vendor dependency created bottlenecks in resolving user-facing issues quickly</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">High recurring operational cost</strong>, vendor pricing scaled with receipt volume, increasingly expensive as the user base grew</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Limited control over accuracy and roadmap</strong>, no ability to iterate on extraction logic or prioritize improvements that mattered to our business</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Slow iteration cycles</strong>, every improvement request or addition of a new partner/retailer went through the vendor's timeline, not ours</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Poor customer support</strong>, vendor dependency created bottlenecks in resolving user-facing issues quickly</li>
         </ul>
         <p style="margin-top: 1rem;">The business needed higher accuracy, faster iteration, lower cost, and scalable infrastructure. This case study covers the product strategy and leadership perspective. For the technical deep-dive into the ML system, see <a href="/pages/project-receipt-extraction.html">Digital Receipt Information Extraction System</a>.</p>
       </div>
@@ -43,7 +43,7 @@ description: Product strategy and technical leadership case study at Fetch Rewar
           <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Integrates seamlessly into the mobile app experience</li>
           <li style="color: #475569; line-height: 1.7;">• Enables future experimentation and personalization</li>
         </ul>
-        <p style="margin-top: 0.75rem;">The goal was not just technical replacement — it was strategic product ownership.</p>
+        <p style="margin-top: 0.75rem;">The goal was not just technical replacement, it was strategic product ownership.</p>
       </div>
 
       <div class="case-study-section">
@@ -147,23 +147,23 @@ description: Product strategy and technical leadership case study at Fetch Rewar
           <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Removed blockers during execution</li>
           <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Presented progress and impact to C-suite executives</li>
         </ul>
-        <p style="margin-top: 0.5rem;">The platform touched multiple product surfaces — mobile app, backend services, and analytics dashboards — requiring tight coordination under startup-mode deadlines.</p>
+        <p style="margin-top: 0.5rem;">The platform touched multiple product surfaces (mobile app, backend services, and analytics dashboards) requiring tight coordination under startup-mode deadlines.</p>
       </div>
 
       <div class="case-study-section">
         <h4>Results & Impact</h4>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Accuracy</strong> — Significantly improved product match accuracy, meeting senior leadership expectations based on human evaluations on production data</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Cost</strong> — Delivered multimillion-dollar annual savings by replacing third-party vendor</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Operations</strong> — Reduced manual review workload through structured human-in-the-loop feedback loop</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Business</strong> — Improved reward attribution reliability for 600+ brand partners, enabling higher targeting precision and improved reporting trust</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Scalability</strong> — Successfully processed 1M+ receipts per day at production scale</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Innovation</strong> — Innovated a new state-of-the-art algorithm for digital receipt extraction directly from unstructured HTML layout/DOM, bypassing traditional OCR pipelines completely (<a href="/pages/project-receipt-extraction.html">ML Technical Deep-Dive</a> · <a href="https://patents.google.com/patent/US11727060B1" target="_blank">US Patent</a>)</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Accuracy</strong>, significantly improved product match accuracy, meeting senior leadership expectations based on human evaluations on production data</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Cost</strong>, delivered multimillion-dollar annual savings by replacing third-party vendor</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Operations</strong>, reduced manual review workload through structured human-in-the-loop feedback loop</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Business</strong>, improved reward attribution reliability for 600+ brand partners, enabling higher targeting precision and improved reporting trust</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Scalability</strong>, successfully processed 1M+ receipts per day at production scale</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Innovation</strong>, innovated a new state-of-the-art algorithm for digital receipt extraction directly from unstructured HTML layout/DOM, bypassing traditional OCR pipelines completely (<a href="/pages/project-receipt-extraction.html">ML Technical Deep-Dive</a> · <a href="https://patents.google.com/patent/US11727060B1" target="_blank">US Patent</a>)</li>
         </ul>
       </div>
 
       <div class="case-study-section">
-        <h4>What Made This a Product Win — Not Just ML</h4>
+        <h4>What Made This a Product Win (Not Just ML)</h4>
         <p>This initiative succeeded because:</p>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
           <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Defined measurable business KPIs before building</li>

@@ -27,7 +27,7 @@ description: NLP-based fake news analysis and classification
 
       <div class="case-study-section">
         <h4>Approach</h4>
-        <p>Performed text mining, exploratory data analysis, and statistical testing on the Buzzfeed news dataset. Identified discriminatory patterns between fake and real news — title length, word usage, and source characteristics. Built predictive classification models to detect fake news articles.</p>
+        <p>Performed text mining, exploratory data analysis, and statistical testing on the Buzzfeed news dataset. Identified discriminatory patterns between fake and real news (title length, word usage, and source characteristics). Built predictive classification models to detect fake news articles.</p>
       </div>
 
       <div class="case-study-section">

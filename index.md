@@ -13,7 +13,7 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
       <p style="font-size: 1.1rem; font-weight: 500; color: #475569; margin-bottom: 0.25rem;">Senior Data Scientist | Technical Product Owner</p>
       <p class="tagline" style="font-size: 1.05rem; color: #475569; font-style: normal;">
         Proven ability to turn vague, ambiguous problems into production-ready solutions.<br>
-        End-to-end ownership of projects — from inception to production delivery.<br>
+        End-to-end ownership of projects, from inception to production delivery.<br>
         Deep expertise in building impactful analytical and AI/ML systems at scale.<br>
         Cross-domain experience spanning tech and banking industries.
       </p>
@@ -83,19 +83,19 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
     <ul class="pub-list reveal">
       <li>
         <span class="pub-type">Patent</span>
-        <span class="pub-text"><a href="https://patents.google.com/patent/US12288151B2/en" target="_blank" rel="noopener">Using ML to Extract Key Information from Digital Receipts HTML Documents</a> &mdash; Fetch Rewards</span>
+        <span class="pub-text"><a href="https://patents.google.com/patent/US12288151B2/en" target="_blank" rel="noopener">Using ML to Extract Key Information from Digital Receipts HTML Documents</a>, Fetch Rewards</span>
       </li>
       <li>
         <span class="pub-type">Paper</span>
-        <span class="pub-text"><a href="https://arxiv.org/abs/2009.08590" target="_blank" rel="noopener">NEU at WNUT-2020 Task 2: Data Augmentation To Tell BERT That Death Is Not Necessarily Informative</a> &mdash; EMNLP 2020</span>
+        <span class="pub-text"><a href="https://arxiv.org/abs/2009.08590" target="_blank" rel="noopener">NEU at WNUT-2020 Task 2: Data Augmentation To Tell BERT That Death Is Not Necessarily Informative</a>, EMNLP 2020</span>
       </li>
     </ul>
 
     <h3 style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #94a3b8; margin-top: 2rem; margin-bottom: 0.75rem;" class="reveal">Certifications</h3>
     <ul class="cert-list reveal">
-      <li>Agentic AI &mdash; DeepLearning.AI</li>
-      <li>Deep Learning Specialization &mdash; DeepLearning.AI</li>
-      <li>Statistical Learning &mdash; Stanford Online</li>
+      <li>Agentic AI, DeepLearning.AI</li>
+      <li>Deep Learning Specialization, DeepLearning.AI</li>
+      <li>Statistical Learning, Stanford Online</li>
     </ul>
   </div>
 </section>
