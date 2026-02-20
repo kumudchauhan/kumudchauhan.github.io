@@ -52,7 +52,12 @@ description: Patented ML system for extracting key information from digital rece
       <div class="case-study-section">
         <h4>Development & Evaluation Pipeline</h4>
         <p>Building this system required standing up the entire ML lifecycle from scratch. I started by hand-labeling training data myself to establish ground truth, then used that foundation to build and train an internal data annotation team for supervised fine-tuning at scale. Since receipts contain sensitive user data, I developed ML models to mask PII from digital receipts before handing them over to the annotation team.</p>
-        <p><strong style="color: #0f172a;">Evaluation Strategy:</strong></p>
+        <p>To improve performance on edge cases and low-volume formats, I leveraged active learning and data augmentation techniques:</p>
+        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Training data enrichment via active learning</strong>: ran the model's predictions on unseen receipts, ingested those predictions into the annotation tool for human correction, and incorporated the corrected examples back into the training set. This bootstrapping strategy rapidly scaled labeled data coverage for underrepresented retailers and formats</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Data augmentation</strong>: randomly substituted entity values (product names, prices, totals, retailer names) within receipt templates to generate synthetic training examples. This helped the model learn structural patterns independent of specific content, improving generalization on complex, edge-case, and low-volume retailer formats</li>
+        </ul>
+        <p style="margin-top: 0.75rem;"><strong style="color: #0f172a;">Evaluation Strategy:</strong></p>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
           <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Offline evaluation</strong>: held-out test datasets tracking precision, recall, and entity-level accuracy across model versions</li>
           <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Shadow deployment infrastructure</strong>: built a separate shadow pipeline to run candidate models in parallel against the existing system, enabling side-by-side comparison on live traffic without impacting users</li>
