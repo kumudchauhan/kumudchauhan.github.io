@@ -46,6 +46,7 @@ description: Patented ML system for extracting key information from digital rece
         <p>To build domain knowledge, I performed Masked Language Modeling (MLM) on transformer models using millions of digital receipts, training the language model to understand eReceipt-specific patterns and vocabulary.</p>
         <p>For the labeled dataset, I used stratified random sampling and clustering techniques to ensure coverage across different receipt formats and to handle the long-tail distribution of retailers. The model was then supervised fine-tuned for a Named Entity Recognition (NER) task using BIO encoding, with an encoder-based transformer backbone and a token classification head to extract entities like product name, price, quantity, and retailer.</p>
         <p>The system started with a placeholder model, allowing me and my team to build the training and inference infrastructure in parallel while iteratively optimizing model accuracy and latency.</p>
+        <p><strong style="color: #0f172a;">Iterative improvement strategy</strong>: prioritized model accuracy improvements in phases: first high-volume retailers (covering the majority of receipt traffic), then partner retailers and restaurants (directly tied to brand offer revenue), and finally tackling the long tail of less common formats and edge cases.</p>
       </div>
 
       <div class="case-study-section">
