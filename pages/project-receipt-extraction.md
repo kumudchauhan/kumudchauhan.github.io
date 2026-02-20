@@ -67,7 +67,8 @@ description: Patented ML system for extracting key information from digital rece
         <p>Designed and delivered a production-grade ML system processing hundreds of millions of receipts across thousands of retailers and formats, serving as a critical component of Fetch's core product experience. The in-house solution replaced external vendor dependency, saving millions in operational costs. The system met senior leadership expectations on accuracy based on human evaluations on production data. Enabled accurate offer matching and reward attribution for millions of active users. The novel approach to HTML-based receipt understanding resulted in a <a href="https://patents.google.com/patent/US12288151B2/en" target="_blank" rel="noopener">US patent</a>.</p>
       </div>
 
-      <p style="margin-top: 2rem;"><a href="/pages/projects.html">&larr; Back to Projects</a></p>
+      <p style="margin-top: 2rem;"><a href="/pages/casestudy-receipt-platform.html">Read the Product & Leadership Case Study &rarr;</a></p>
+      <p style="margin-top: 0.5rem;"><a href="/pages/projects.html">&larr; Back to Projects</a></p>
 
     </div>
   </div>

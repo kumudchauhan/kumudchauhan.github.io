@@ -13,16 +13,16 @@ description: Kumud Chauhan's Data Science projects
   <div class="section-container">
 
     <div class="case-study reveal">
-      <h3><a href="/pages/project-receipt-extraction.html">Digital Receipt Information Extraction System</a></h3>
+      <h3><a href="/pages/casestudy-receipt-platform.html">A Scalable AI-Powered Receipt Intelligence System</a></h3>
       <div class="case-study-meta">
-        <span>PyTorch</span>
-        <span>BERT</span>
-        <span>Hugging Face</span>
-        <span>Amazon SageMaker</span>
-        <span>MLflow</span>
+        <span>Product Strategy</span>
+        <span>Cross-Functional Leadership</span>
+        <span>Roadmap & Execution</span>
+        <span>KPI Design</span>
       </div>
-      <p style="color: #475569; line-height: 1.7; margin-bottom: 0.75rem;">Designed an in-house ML system for extracting key information from hundreds of millions of unstructured digital receipts across thousands of retailers and formats. Built the full ML lifecycle from research to production — resulting in a US patent.</p>
-      <a href="/pages/project-receipt-extraction.html" style="font-size: 0.9rem; font-weight: 500;">Read more &rarr;</a>
+      <p style="color: #475569; line-height: 1.7; margin-bottom: 0.75rem;">Led the product strategy and cross-functional delivery of an in-house AI-powered receipt intelligence platform that replaced a high-cost third-party vendor. Delivered multimillion-dollar annual savings while supporting 10M+ users and 600+ brand partners.</p>
+      <a href="/pages/casestudy-receipt-platform.html" style="font-size: 0.9rem; font-weight: 500; display: block; margin-bottom: 0.3rem;">Tech Lead & Product Owner &rarr;</a>
+      <a href="/pages/project-receipt-extraction.html" style="font-size: 0.9rem; font-weight: 500; display: block;">ML Technical Deep-Dive &rarr;</a>
     </div>
 
     <div class="case-study reveal">
