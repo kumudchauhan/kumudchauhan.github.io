@@ -67,6 +67,7 @@ description: Product strategy and technical leadership case study at Fetch Rewar
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Points awarded accuracy</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Offer redemption accuracy</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Partner reporting reliability</li>
+          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Retailer-level coverage and volume</li>
           <li style="color: #475569; line-height: 1.7;">• Cost per receipt processed</li>
         </ul>
         <p style="margin-top: 0.75rem;"><strong style="color: #0f172a;">Operational Metrics</strong></p>
