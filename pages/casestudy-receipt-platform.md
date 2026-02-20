@@ -146,6 +146,8 @@ description: Product strategy and technical leadership case study at Fetch Rewar
           <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Negotiated scope tradeoffs</li>
           <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Removed blockers during execution</li>
           <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Presented progress and impact to C-suite executives</li>
+          <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Partnered with the data integrity team to establish human-in-the-loop weekly audits on real-world production data, creating a structured feedback loop between model performance and ground truth</li>
+          <li style="margin-bottom: 0.4rem; color: #475569; line-height: 1.7;">• Influenced product and engineering teams to prioritize building an internal debugging and observability app where the team could inspect model predictions end-to-end and identify whether a failed offer trigger was a model extraction failure or a downstream service issue</li>
         </ul>
         <p style="margin-top: 0.5rem;">The platform touched multiple product surfaces (mobile app, backend services, and analytics dashboards) requiring tight coordination under startup-mode deadlines.</p>
       </div>
