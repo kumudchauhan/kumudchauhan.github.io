@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Case Study: Scaling an AI-Powered Receipt Intelligence Platform"
+title: "Case Study: Scaling an AI-Powered eReceipt Intelligence Platform"
 description: Product strategy and technical leadership case study at Fetch Rewards
 ---
 
 <div class="page-hero">
-  <h1>A Scalable AI-Powered Receipt Intelligence System</h1>
-  <p class="subtitle">Senior Data Scientist, Tech Lead | Fetch Rewards</p>
+  <h1>A Scalable AI-Powered eReceipt Intelligence System</h1>
+  <p class="subtitle">Tech Lead, Senior Data Scientist | Fetch Rewards</p>
   <p style="color: #2563eb; font-size: 0.95rem; font-weight: 500; margin-top: 0.25rem;">Product Strategy · Technical Execution · Cross-Functional Delivery</p>
   <p style="color: #64748b; font-size: 0.95rem; margin-top: 0.5rem;">10M+ users · 1M+ receipts/day · 600+ brand partners</p>
 </div>
