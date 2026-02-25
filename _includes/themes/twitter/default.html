@@ -30,8 +30,6 @@
         <ul class="nav-menu" id="navMenu">
           <li><a href="{{ BASE_PATH }}/pages/about.html">About</a></li>
           <li><a href="{{ BASE_PATH }}/pages/projects.html">Projects</a></li>
-          <li><a href="https://www.linkedin.com/in/kumudneu" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/kumudchauhan" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </div>
     </nav>
@@ -41,6 +39,7 @@
       {{ content }}
     </main>
 
+    {% unless page.layout == 'frontpage' %}
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
@@ -53,6 +52,7 @@
         <p class="footer-copy">&copy; {{ site.time | date: '%Y' }} Kumud Chauhan</p>
       </div>
     </footer>
+    {% endunless %}
 
     <!-- Scripts -->
     <script>

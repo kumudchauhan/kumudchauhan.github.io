@@ -19,8 +19,6 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
       </p>
       <div class="hero-links">
         <a href="mailto:kumudchauhan30@gmail.com" class="btn btn-primary">Get in Touch</a>
-        <a href="https://www.linkedin.com/in/kumudneu" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
-        <a href="https://github.com/kumudchauhan" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
       </div>
     </div>
     <div class="hero-image">
@@ -33,6 +31,11 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
   <div class="section-container">
     <h2 class="section-title reveal">What I Do</h2>
     <div class="capabilities-grid">
+      <div class="capability-card reveal">
+        <span class="capability-icon">&#10024;</span>
+        <h3>GenAI &amp; Agentic AI</h3>
+        <p>LLM evaluation, RAG architectures, AI agent development</p>
+      </div>
       <div class="capability-card reveal">
         <span class="capability-icon">&#9881;</span>
         <h3>ML Systems</h3>
@@ -48,11 +51,6 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
         <h3>Product Analytics</h3>
         <p>A/B testing, funnel analysis, experimentation, KPI design</p>
       </div>
-      <div class="capability-card reveal">
-        <span class="capability-icon">&#10024;</span>
-        <h3>GenAI &amp; Agentic AI</h3>
-        <p>LLM evaluation, RAG architectures, AI agent development</p>
-      </div>
     </div>
   </div>
 </section>
@@ -63,15 +61,11 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
     <div class="highlights-grid reveal">
       <div class="highlight-item">
         <div class="highlight-number">Patented</div>
-        <div class="highlight-label">Tech Lead for Fetch's patented digital receipt information extraction system, processing 1M+ receipts/day in production</div>
+        <div class="highlight-label">Designed a novel ML approach for eReceipt extraction, bypassing traditional OCR pipelines entirely</div>
       </div>
       <div class="highlight-item">
-        <div class="highlight-number">11M+</div>
-        <div class="highlight-label">Built ML and analytics products impacting millions of active users</div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-number">EMNLP</div>
-        <div class="highlight-label">Published researcher at a top-tier NLP conference (EMNLP 2020)</div>
+        <div class="highlight-number">$M+ Savings</div>
+        <div class="highlight-label">Replaced third-party vendor with in-house AI platform, delivering multimillion-dollar annual operational cost savings</div>
       </div>
     </div>
   </div>
@@ -102,15 +96,8 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
 
 <section>
   <div class="section-container">
-    <h2 class="section-title reveal" style="display: block; text-align: center;">Contact</h2>
-    <div class="contact-content reveal">
-      <p>I'm actively looking for full-time opportunities in Data Science &amp; Analytics. Let's connect.</p>
-      <div class="contact-links">
-        <a href="mailto:kumudchauhan30@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/kumudneu" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/kumudchauhan" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.kaggle.com/kumudchauhan" target="_blank" rel="noopener">Kaggle</a>
-      </div>
+    <div class="contact-content reveal" style="text-align: center;">
+      <a href="mailto:kumudchauhan30@gmail.com" class="btn btn-primary">Get in Touch</a>
     </div>
   </div>
 </section>
