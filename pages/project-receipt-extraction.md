@@ -75,7 +75,13 @@ description: Patented ML system for extracting key information from digital rece
 
       <div class="case-study-section">
         <h4>Impact</h4>
-        <p>Designed and delivered a production-grade ML system processing hundreds of millions of receipts across thousands of retailers and formats, serving as a critical component of Fetch's core product experience. The in-house solution replaced external vendor dependency, saving millions in operational costs. The system met senior leadership expectations on accuracy based on human evaluations on production data. Enabled accurate offer matching and reward attribution for millions of active users. The novel approach to HTML-based receipt understanding resulted in a <a href="https://patents.google.com/patent/US12288151B2/en" target="_blank" rel="noopener">US patent</a>.</p>
+        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Scale</strong>: production-grade ML system processing hundreds of millions of receipts across thousands of retailers and formats</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Cost</strong>: replaced external vendor dependency, saving millions in annual operational costs</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Accuracy</strong>: met senior leadership expectations based on human evaluations on production data</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Business</strong>: enabled accurate offer matching and reward attribution for millions of active users</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Innovation</strong>: novel approach to HTML-based receipt understanding resulted in a <a href="https://patents.google.com/patent/US12288151B2/en" target="_blank" rel="noopener">US patent</a></li>
+        </ul>
       </div>
 
       <p style="margin-top: 2rem;"><a href="/pages/casestudy-receipt-platform.html">Read the Product & Leadership Case Study &rarr;</a></p>

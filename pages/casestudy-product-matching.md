@@ -93,7 +93,7 @@ description: Product strategy and analytical leadership case study at Fetch Rewa
         <h4>Precision vs Coverage - A Deliberate Tradeoff</h4>
         <p>The system needed to maximize coverage while maintaining strict precision. False positives were not just an accuracy issue, they directly caused incorrect brand attribution and billing errors, creating revenue risk for both Fetch and its partners. I implemented:</p>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Recall@K optimization at retrieval stage</li>
+          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Recall@10 optimization at retrieval stage</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Calibrated confidence thresholds</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Precision-coverage tradeoff curves</li>
           <li style="color: #475569; line-height: 1.7;">• Shadow deployment before automation</li>
