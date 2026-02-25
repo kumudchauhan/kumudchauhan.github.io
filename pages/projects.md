@@ -26,16 +26,16 @@ description: Kumud Chauhan's Data Science projects
     </div>
 
     <div class="case-study reveal">
-      <h3><a href="/pages/project-semantic-search.html">Product Matching via Semantic Search</a></h3>
+      <h3><a href="/pages/casestudy-product-matching.html">Designing a Revenue-Aligned Product Matching System at Scale</a></h3>
       <div class="case-study-meta">
-        <span>SBERT</span>
-        <span>FAISS</span>
-        <span>Cross-Encoders</span>
-        <span>Gradient Boosting</span>
-        <span>TF-IDF</span>
+        <span>Revenue Strategy</span>
+        <span>Diagnostic Analysis</span>
+        <span>Hybrid ML Architecture</span>
+        <span>Precision-Recall Calibration</span>
       </div>
-      <p style="color: #475569; line-height: 1.7; margin-bottom: 0.75rem;">Designed a calibrated retrieval and ranking system to match receipt line items to a product catalog. Reframed the problem as a precision-recall tradeoff under revenue constraints, significantly improving match coverage across billions of line items.</p>
-      <a href="/pages/project-semantic-search.html" style="font-size: 0.9rem; font-weight: 500;">Read more &rarr;</a>
+      <p style="color: #475569; line-height: 1.7; margin-bottom: 0.75rem;">Reframed product matching from an accuracy problem to a revenue-aligned systems problem. Conducted structured failure analysis, identified Pareto distribution in unmatched items, designed a two-track strategy (catalog enrichment + hybrid retrieval architecture), achieving 45% coverage improvement across millions of daily line items.</p>
+      <a href="/pages/casestudy-product-matching.html" style="font-size: 0.9rem; font-weight: 500; display: block; margin-bottom: 0.3rem;">Product Strategy & Analysis &rarr;</a>
+      <a href="/pages/project-semantic-search.html" style="font-size: 0.9rem; font-weight: 500; display: block;">ML Technical Deep-Dive &rarr;</a>
     </div>
 
     <div class="case-study reveal">
