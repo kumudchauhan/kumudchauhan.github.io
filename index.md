@@ -19,6 +19,7 @@ keywords: Kumud Chauhan, Data Scientist, Machine Learning, NLP, LLM, Deep Learni
       </p>
       <div class="hero-links">
         <a href="mailto:kumudchauhan30@gmail.com" class="btn btn-primary">Get in Touch</a>
+        <a href="https://www.linkedin.com/in/kumudneu" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
       </div>
     </div>
     <div class="hero-image">

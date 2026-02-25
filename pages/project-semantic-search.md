@@ -24,7 +24,7 @@ description: Semantic search and retrieval system using SBERT and FAISS
 
       <div class="case-study-section">
         <h4>Business Problem</h4>
-        <p>When a user submits a receipt on Fetch, each line item needs to be matched to a known product in the catalog. This is how Fetch connects purchases to brand offers and rewards users with the right points. At the time, a significant portion of receipt line items were not being automatically matched, requiring heavy manual review and limiting the value of receipt data at scale. With millions of receipts flowing in daily, improving match coverage was critical to unlocking better offer targeting, accurate reward attribution, and reducing operational overhead.</p>
+        <p>With 6M+ daily active users and 11M+ receipts processed every day, Fetch's system extracted hundreds of millions of line items from receipts. Each line item needed to be matched to a known product in the catalog, connecting purchases to brand offers and rewarding users with the right points. At the time, a significant portion of these items were not being automatically matched, requiring heavy manual review and limiting the value of receipt data at scale. Improving match coverage was critical to unlocking better offer targeting, accurate reward attribution, and driving revenue for brand partners.</p>
       </div>
 
       <div class="case-study-section">
@@ -66,7 +66,8 @@ description: Semantic search and retrieval system using SBERT and FAISS
         <p>Significantly improved product match coverage and ranking accuracy, substantially reducing manual review effort. Maintained high precision at the chosen threshold, improving brand attribution reliability for CPG partners. Reduced operational costs and enabled more accurate offer targeting, reward attribution, and partner reporting across millions of receipts and billions of line items.</p>
       </div>
 
-      <p style="margin-top: 2rem;"><a href="/pages/projects.html">&larr; Back to Projects</a></p>
+      <p style="margin-top: 2rem;"><a href="/pages/casestudy-product-matching.html">Read the Product & Strategy Case Study &rarr;</a></p>
+      <p style="margin-top: 0.5rem;"><a href="/pages/projects.html">&larr; Back to Projects</a></p>
 
     </div>
   </div>
