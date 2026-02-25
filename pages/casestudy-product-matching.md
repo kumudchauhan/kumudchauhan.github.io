@@ -45,8 +45,8 @@ description: Product strategy and analytical leadership case study at Fetch Rewa
       </div>
 
       <div class="case-study-section">
-        <h4>The Pareto Insight</h4>
-        <p>The distribution was heavily skewed. A relatively small percentage of SKUs drove the majority of revenue-relevant volume. Meanwhile, a large volume of unmatched items belonged to:</p>
+        <h4>The Pareto Insight (80/20 Rule)</h4>
+        <p>The distribution followed a classic 80/20 pattern. A small percentage of SKUs drove the vast majority of revenue-relevant volume. Meanwhile, a large volume of unmatched items belonged to:</p>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Produce and commodity grocery</li>
           <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Pharmacy prescriptions</li>
