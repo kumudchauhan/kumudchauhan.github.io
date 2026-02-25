@@ -20,19 +20,19 @@ description: Product strategy and analytical leadership case study at Fetch Rewa
         <p>With 6M+ daily active users and 11M+ receipts processed every day, Fetch's system extracted hundreds of millions of line items from receipts. Each line item needed to be matched to a known product in an internal taxonomy to power offer eligibility, brand attribution, partner billing, and rewards calculation. This matching pipeline was a core revenue driver, directly connecting user purchases to 600+ brand partners.</p>
         <p style="margin-top: 0.75rem;">At the time, a significant portion of these items were not being automatically matched, requiring heavy manual review and limiting the value of receipt data at scale. Improving automated product assignment was a strategic priority.</p>
         <p style="margin-top: 0.75rem;">But early discussions framed the problem as: "We need higher match accuracy."</p>
-        <p style="margin-top: 0.75rem;">Before building models, I asked:</p>
+        <p style="margin-top: 0.75rem;">Before building ML models, gaining clarity and understanding the key problem is important to establish the goal. I asked:</p>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Higher accuracy for what?</li>
-          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Across which categories?</li>
-          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• With what revenue impact?</li>
-          <li style="color: #475569; line-height: 1.7;">• Under what catalog constraints?</li>
+          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• What does "higher accuracy" mean in terms of business outcomes?</li>
+          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• Which product categories and retailers matter most?</li>
+          <li style="margin-bottom: 0.3rem; color: #475569; line-height: 1.7;">• What is the revenue impact of unmatched items?</li>
+          <li style="color: #475569; line-height: 1.7;">• What are the constraints of the current product catalog?</li>
         </ul>
         <p style="margin-top: 0.75rem;"><strong style="color: #0f172a;">This reframed the initiative from a modeling problem to a product systems problem.</strong></p>
       </div>
 
       <div class="case-study-section">
         <h4>Diagnostic Deep Dive: Understanding Failure</h4>
-        <p>Instead of immediately iterating on models, I conducted a structured failure analysis.</p>
+        <p>Instead of immediately iterating on ML models, I conducted a structured failure analysis.</p>
         <p style="margin-top: 0.75rem;"><strong style="color: #0f172a;">Sampling Approach</strong></p>
         <p style="color: #475569; line-height: 1.7;">Stratified sample of 50,000 recent unmatched line items, balanced across merchants, frequency bands, OCR quality, and categories.</p>
         <p style="margin-top: 0.75rem;"><strong style="color: #0f172a;">Key Questions</strong></p>
