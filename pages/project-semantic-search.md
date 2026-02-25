@@ -32,6 +32,44 @@ description: Semantic search and retrieval system using SBERT and FAISS
           <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;">The matching system needed to operate at scale with low latency, handle noisy and inconsistent input data, and maintain high precision to avoid revenue misattribution</li>
           <li style="color: #475569; line-height: 1.7;">For the full business context and problem reframing, see the <a href="/pages/casestudy-product-matching.html">Product & Strategy Case Study</a></li>
         </ul>
+        <p style="margin-top: 1rem; margin-bottom: 0.5rem;"><strong style="color: #0f172a;">Example: Receipt Line Item to Catalog Match</strong></p>
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-top: 0.5rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid #e2e8f0;">
+              <th style="text-align: left; padding: 0.5rem 0.75rem; color: #0f172a;">Receipt Line Item</th>
+              <th style="text-align: left; padding: 0.5rem 0.75rem; color: #0f172a;">Catalog Product</th>
+              <th style="text-align: left; padding: 0.5rem 0.75rem; color: #0f172a;">Match Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">ORG MILK 1GAL</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">Organic Whole Milk 1 Gallon</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">SKU match</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">CHKN BRST BNLS</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">Fresh Chicken Breast</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">Semantic</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">EVOO 500ML</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">Extra Virgin Olive Oil 500ml</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">Semantic</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">PNT BTR CRMY 16OZ</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">Peanut Butter Creamy 16oz</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">Semantic</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">GRD BEEF 80/20</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">Ground Beef 80/20</td>
+              <td style="padding: 0.5rem 0.75rem; color: #475569;">UPC match</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top: 0.5rem; color: #64748b; font-size: 0.85rem; line-height: 1.6;">Items with valid SKU/UPC identifiers are resolved via direct lookup. Items with abbreviated, noisy, or missing identifiers require semantic matching.</p>
       </div>
 
       <div class="case-study-section">
@@ -43,7 +81,81 @@ description: Semantic search and retrieval system using SBERT and FAISS
       </div>
 
       <div class="case-study-section">
-        <h4>Approach</h4>
+        <h4>Modeling Approach</h4>
+
+        <!-- Pipeline Diagram -->
+        <div style="margin: 1.5rem 0 2rem; padding: 1.5rem; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+          <p style="text-align: center; font-weight: 600; color: #0f172a; margin-bottom: 1.25rem; font-size: 0.95rem;">Retrieval & Ranking Pipeline</p>
+
+          <!-- Row 1: Input -->
+          <div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
+            <div style="background: #1e293b; color: #fff; padding: 0.6rem 1.25rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; text-align: center;">Receipt Line Items</div>
+          </div>
+          <div style="text-align: center; color: #94a3b8; font-size: 1.2rem; margin-bottom: 0.5rem;">&#8595;</div>
+
+          <!-- Row 2: Direct Match -->
+          <div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
+            <div style="background: #fff; border: 2px solid #e2e8f0; padding: 0.6rem 1.25rem; border-radius: 6px; font-size: 0.85rem; text-align: center;">
+              <strong style="color: #0f172a;">Direct Match Lookup</strong><br>
+              <span style="color: #64748b; font-size: 0.8rem;">SKU / UPC / Barcode</span>
+            </div>
+          </div>
+
+          <!-- Row 2b: Branch -->
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 2rem; margin-bottom: 0.5rem;">
+            <div style="text-align: center;">
+              <span style="color: #16a34a; font-size: 0.8rem; font-weight: 500;">Match found</span>
+              <div style="color: #94a3b8; font-size: 1.2rem;">&#8595;</div>
+              <div style="background: #f0fdf4; border: 2px solid #bbf7d0; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.8rem; color: #166534; font-weight: 500;">Matched Product</div>
+            </div>
+            <div style="text-align: center;">
+              <span style="color: #dc2626; font-size: 0.8rem; font-weight: 500;">No match</span>
+              <div style="color: #94a3b8; font-size: 1.2rem;">&#8595;</div>
+            </div>
+          </div>
+
+          <!-- Row 3: SBERT + FAISS -->
+          <div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
+            <div style="background: #fff; border: 2px solid #e2e8f0; padding: 0.6rem 1.25rem; border-radius: 6px; font-size: 0.85rem; text-align: center;">
+              <strong style="color: #0f172a;">Candidate Retrieval</strong><br>
+              <span style="color: #64748b; font-size: 0.8rem;">SBERT Bi-Encoder + FAISS (Top-K)</span>
+            </div>
+          </div>
+          <div style="text-align: center; color: #94a3b8; font-size: 1.2rem; margin-bottom: 0.5rem;">&#8595;</div>
+
+          <!-- Row 4: Cross-Encoder -->
+          <div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
+            <div style="background: #fff; border: 2px solid #e2e8f0; padding: 0.6rem 1.25rem; border-radius: 6px; font-size: 0.85rem; text-align: center;">
+              <strong style="color: #0f172a;">Cross-Encoder Reranking</strong><br>
+              <span style="color: #64748b; font-size: 0.8rem;">ms-marco-MiniLM-L-6-v2</span>
+            </div>
+          </div>
+          <div style="text-align: center; color: #94a3b8; font-size: 1.2rem; margin-bottom: 0.5rem;">&#8595;</div>
+
+          <!-- Row 5: Confidence -->
+          <div style="display: flex; justify-content: center; margin-bottom: 0.5rem;">
+            <div style="background: #fff; border: 2px solid #e2e8f0; padding: 0.6rem 1.25rem; border-radius: 6px; font-size: 0.85rem; text-align: center;">
+              <strong style="color: #0f172a;">Confidence Calibration</strong><br>
+              <span style="color: #64748b; font-size: 0.8rem;">Precision-Coverage Threshold</span>
+            </div>
+          </div>
+
+          <!-- Row 5b: Branch -->
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 2rem; margin-top: 0.5rem;">
+            <div style="text-align: center;">
+              <span style="color: #16a34a; font-size: 0.8rem; font-weight: 500;">High confidence</span>
+              <div style="color: #94a3b8; font-size: 1.2rem;">&#8595;</div>
+              <div style="background: #f0fdf4; border: 2px solid #bbf7d0; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.8rem; color: #166534; font-weight: 500;">Auto-Assigned</div>
+            </div>
+            <div style="text-align: center;">
+              <span style="color: #f59e0b; font-size: 0.8rem; font-weight: 500;">Low confidence</span>
+              <div style="color: #94a3b8; font-size: 1.2rem;">&#8595;</div>
+              <div style="background: #fffbeb; border: 2px solid #fde68a; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.8rem; color: #92400e; font-weight: 500;">Manual Review</div>
+            </div>
+          </div>
+        </div>
+        <!-- End Pipeline Diagram -->
+
         <p style="margin-bottom: 0.75rem;"><strong style="color: #0f172a;">Gold Dataset</strong></p>
         <ul style="list-style: none; padding: 0; margin-top: 0;">
           <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;">Created a 50K+ stratified labeled dataset by merchant, frequency (head vs long-tail), OCR quality, and category</li>
@@ -94,10 +206,27 @@ description: Semantic search and retrieval system using SBERT and FAISS
       </div>
 
       <div class="case-study-section">
-        <h4>Challenges</h4>
+        <h4>Evaluation Strategy</h4>
+        <p><strong style="color: #0f172a;">Offline ML Metrics</strong></p>
         <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Noisy identifiers and short descriptions</strong>: receipt line items often contained abbreviated product names, partial UPC/SKU codes with trailing zeros or mismatched formats, making direct text matching unreliable</li>
-          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">OCR errors in physical receipts</strong>: scanned paper receipts introduced misspellings, merged words, and missing characters, further degrading match quality</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Recall@10</strong>: measuring whether the correct product appeared in the top-10 candidates</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Top-1 accuracy</strong>: measuring exact match at the top rank</li>
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">MRR (Mean Reciprocal Rank)</strong>: measuring ranking quality across candidates</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Precision at operating threshold</strong>: ensuring automation didn't introduce revenue risk</li>
+        </ul>
+        <p style="margin-top: 0.75rem;"><strong style="color: #0f172a;">Business Metrics</strong></p>
+        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Points awarded accuracy</strong>: correctness of reward points attributed to users based on matched products</li>
+          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Dollar value of rewards</strong>: financial accuracy of rewards distributed, directly tied to partner billing and revenue reconciliation</li>
+        </ul>
+        <p style="margin-top: 0.75rem;">The 50K+ stratified gold dataset served as the foundation for all offline evaluation, and shadow deployments enabled safe comparison on live traffic before production release.</p>
+      </div>
+
+      <div class="case-study-section">
+        <h4>Key Takeaways & Challenges</h4>
+        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Noisy identifiers and short descriptions</strong>: receipt line items often contained abbreviated product names (e.g., "GV 2% MLK 1GL" for "Great Value 2% Reduced Fat Milk, 1 Gallon"), partial UPC/SKU codes with trailing zeros or mismatched formats, making direct text matching unreliable</li>
+          <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">OCR errors in physical receipts</strong>: scanned paper receipts introduced misspellings, merged words, and missing characters (e.g., "CHBNI VAN YGT" for "Chobani Vanilla Greek Yogurt"), further degrading match quality</li>
           <li style="margin-bottom: 0.75rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Large, evolving taxonomy</strong>: the product catalog was continuously growing, requiring the system to generalize to new products without retraining</li>
           <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Data drift and continuous inference on unseen items</strong>: millions of new and unknown items were inferred daily against fixed catalog embeddings, requiring iterative retraining, gold dataset refresh, and ongoing monitoring to maintain match quality as product distributions shifted over time</li>
         </ul>
@@ -119,23 +248,6 @@ description: Semantic search and retrieval system using SBERT and FAISS
         <ul style="list-style: none; padding: 0; margin-top: 0;">
           <li style="color: #475569; line-height: 1.7;">Horizontal scaling with auto-scaling SageMaker endpoints to handle traffic spikes and sustained high-volume processing across millions of daily line items</li>
         </ul>
-      </div>
-
-      <div class="case-study-section">
-        <h4>Evaluation Strategy</h4>
-        <p><strong style="color: #0f172a;">Offline ML Metrics</strong></p>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Recall@10</strong>: measuring whether the correct product appeared in the top-10 candidates</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Top-1 accuracy</strong>: measuring exact match at the top rank</li>
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">MRR (Mean Reciprocal Rank)</strong>: measuring ranking quality across candidates</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Precision at operating threshold</strong>: ensuring automation didn't introduce revenue risk</li>
-        </ul>
-        <p style="margin-top: 0.75rem;"><strong style="color: #0f172a;">Business Metrics</strong></p>
-        <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-          <li style="margin-bottom: 0.5rem; color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Points awarded accuracy</strong>: correctness of reward points attributed to users based on matched products</li>
-          <li style="color: #475569; line-height: 1.7;"><strong style="color: #0f172a;">Dollar value of rewards</strong>: financial accuracy of rewards distributed, directly tied to partner billing and revenue reconciliation</li>
-        </ul>
-        <p style="margin-top: 0.75rem;">The 50K+ stratified gold dataset served as the foundation for all offline evaluation, and shadow deployments enabled safe comparison on live traffic before production release.</p>
       </div>
 
       <div class="case-study-section">
