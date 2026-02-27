@@ -9,26 +9,18 @@ tags: [AI, RL, Agentic AI]
 
 *An analysis of the engineering trade-offs between throughput, stability, and agent autonomy in industrial-scale RL.*
 
-<div class="key-highlights">
-  <div class="key-highlight-item">
-    <strong>40x Training Speedup</strong>
-    <span>Achieved through Prefix Tree Merging.</span>
-  </div>
-  <div class="key-highlight-item">
-    <strong>100% GPU Utility</strong>
-    <span>Maintained by Windowed FIFO scheduling.</span>
-  </div>
-  <div class="key-highlight-item">
-    <strong>Reasoning Fidelity</strong>
-    <span>Preserved at 200k context windows via the CISPO algorithm.</span>
-  </div>
+<div class="key-takeaways">
+  <p class="key-takeaways-title">Key Takeaways</p>
+  <ul>
+    <li><strong>40x Training Speedup</strong> via Prefix Tree Merging.</li>
+    <li><strong>100% GPU Utility</strong> via Windowed FIFO.</li>
+    <li><strong>SOTA 80.2% SWE-Bench Verified</strong> score.</li>
+  </ul>
 </div>
 
 In the two weeks since the debut of MiniMax M2.5, the industry conversation has shifted from "initial hype" to "production reality." While many were focused on the model's SOTA scores, specifically its 80.2% on SWE-Bench Verified, the real story for engineers is Forge: the internal framework that moved Agent RL from a research experiment to an industrial-scale engine.
 
 Scaling Reinforcement Learning (RL) for real-world agents has long been hindered by a fundamental trilemma: balancing System Throughput, Training Stability, and Agent Flexibility. MiniMax calls this the "Impossible Triangle." Here is my analysis of how the Forge framework resolves these structural trade-offs to enable frontier intelligence at an "agent-native" price point.
-
-![Windowed FIFO Scheduling](/assets/windowed-fifo-scheduling.png)
 
 ## The Architectural Shift: Forge vs. PPO/GRPO
 
@@ -133,7 +125,7 @@ In production, one "hard" reasoning task might take hours while "easy" ones take
 
 **The Solution:** Forge uses a sliding visibility window. It allows for "local greedy" processing, fetching fast tasks immediately to keep GPUs busy, while forcing the scheduler to wait for stragglers before moving the window forward. This maintains a stable training distribution without wasting compute.
 
-![Forge Architecture](/assets/forge-architecture.png)
+![Windowed FIFO Scheduling](/assets/windowed-fifo-scheduling.png)
 
 ## Deep-Dive: Stability via CISPO
 
@@ -154,11 +146,20 @@ I waited for the data to verify these architectural claims. Two weeks post-launc
 - **Economic Disruption:** Currently the #1 used model on OpenRouter (2.45T tokens in one week), thanks to the efficiency gains that allow for $0.30 - $1.00 per hour pricing.
 - **Internal Utility:** M2.5 now autonomously completes 30% of all tasks at MiniMax, proving it is ready for real-world employment.
 
+![OpenRouter LLM Leaderboard - This Week](/assets/openrouter-leaderboard.png)
+
+<div class="callout">
+  <p class="callout-title">Production Cost Comparison: M2.5 vs. Claude Opus 4.6</p>
+  <p>MiniMax M2.5 matches Claude Opus 4.6 in coding benchmarks and task completion speed, at roughly <strong>1/10th the cost</strong>. The efficiency gains from Forge's Prefix Tree Merging and Windowed FIFO scheduling translate directly into pricing: $0.30 - $1.00 per hour vs. the significantly higher cost of frontier models. For teams evaluating production deployment at scale, this cost-performance ratio changes the calculus entirely.</p>
+</div>
+
 ## Summary & Final Thoughts
 
 We are entering a phase where the "secret sauce" of AI is moving from the model itself to the RL orchestration layer.
 
 Forge proves that if you solve the engineering bottlenecks of asynchronous, long-horizon data, you can move frontier intelligence out of the research lab and into affordable, production-ready systems.
+
+![Forge Architecture](/assets/forge-architecture.png)
 
 **My Intent:** I wrote this study to document the elegant engineering behind Prefix Redundancy and Windowed Scheduling: breakthroughs that I believe will define the next generation of industrial-scale agent training.
 
