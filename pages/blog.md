@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Blog
-description: Thoughts on data science, ML systems, and AI
+description: Thoughts on AI, Agents, RL, ML, and Data Science
 ---
 
 <div class="page-hero">
   <h1>Blog</h1>
-  <p class="subtitle">Thoughts on data science, ML systems, and AI</p>
+  <p class="subtitle">Thoughts on AI, Agents, RL, ML, and Data Science</p>
 </div>
 
 <section>
