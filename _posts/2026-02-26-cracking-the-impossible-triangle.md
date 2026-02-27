@@ -7,6 +7,11 @@ categories: [AI]
 tags: [AI, RL, Agentic AI]
 ---
 
+<figure class="post-figure">
+  <img src="/assets/impossible-triangle.jpg" alt="The Impossible Triangle">
+  <figcaption>Figure 1: The Impossible Triangle — Throughput, Stability, and Agent Flexibility.</figcaption>
+</figure>
+
 *An analysis of the engineering trade-offs between throughput, stability, and agent autonomy in industrial-scale RL.*
 
 <div class="key-takeaways">
@@ -117,7 +122,10 @@ In research, we often ignore data redundancy. In production, redundancy is a sil
 
 **Impact:** This achieved a 40x training speedup, making it economically viable to train on 200k context windows, the exact capability that allows M2.5 to handle massive codebases.
 
-![Prefix Tree Merging Diagram](/assets/prefix-tree-diagram.png)
+<figure class="post-figure">
+  <img src="/assets/prefix-tree-diagram.png" alt="Prefix Tree Merging Diagram">
+  <figcaption>Figure 2: Prefix Tree Merging — shared prefix calculated once, branching for unique completions.</figcaption>
+</figure>
 
 ## Solving Scheduling Deadlocks: Windowed FIFO
 
@@ -125,7 +133,10 @@ In production, one "hard" reasoning task might take hours while "easy" ones take
 
 **The Solution:** Forge uses a sliding visibility window. It allows for "local greedy" processing, fetching fast tasks immediately to keep GPUs busy, while forcing the scheduler to wait for stragglers before moving the window forward. This maintains a stable training distribution without wasting compute.
 
-![Windowed FIFO Scheduling](/assets/windowed-fifo-scheduling.png)
+<figure class="post-figure">
+  <img src="/assets/windowed-fifo-scheduling.png" alt="Windowed FIFO Scheduling">
+  <figcaption>Figure 3: Windowed FIFO Scheduling — local greedy processing with straggler-aware window.</figcaption>
+</figure>
 
 ## Deep-Dive: Stability via CISPO
 
@@ -146,7 +157,10 @@ I waited for the data to verify these architectural claims. Two weeks post-launc
 - **Economic Disruption:** Currently the #1 used model on OpenRouter (2.45T tokens in one week), thanks to the efficiency gains that allow for $0.30 - $1.00 per hour pricing.
 - **Internal Utility:** M2.5 now autonomously completes 30% of all tasks at MiniMax, proving it is ready for real-world employment.
 
-![OpenRouter LLM Leaderboard - This Week](/assets/openrouter-leaderboard.png)
+<figure class="post-figure">
+  <img src="/assets/openrouter-leaderboard.png" alt="OpenRouter LLM Leaderboard">
+  <figcaption>Figure 4: OpenRouter LLM Leaderboard — MiniMax M2.5 at #1 with 1.73T tokens this week.</figcaption>
+</figure>
 
 <div class="callout">
   <p class="callout-title">Production Cost Comparison: M2.5 vs. Claude Opus 4.6</p>
@@ -159,7 +173,10 @@ We are entering a phase where the "secret sauce" of AI is moving from the model 
 
 Forge proves that if you solve the engineering bottlenecks of asynchronous, long-horizon data, you can move frontier intelligence out of the research lab and into affordable, production-ready systems.
 
-![Forge Architecture](/assets/forge-architecture.png)
+<figure class="post-figure">
+  <img src="/assets/forge-architecture.png" alt="Forge Architecture">
+  <figcaption>Figure 5: Forge Architecture — Agent, Middleware, and Training & Inference layers.</figcaption>
+</figure>
 
 **My Intent:** I wrote this study to document the elegant engineering behind Prefix Redundancy and Windowed Scheduling: breakthroughs that I believe will define the next generation of industrial-scale agent training.
 

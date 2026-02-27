@@ -897,6 +897,23 @@ section {
   margin-top: 0.5rem;
 }
 
+.post-figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.post-figure img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.post-figure figcaption {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 .post-content a {
   color: #2563eb;
   text-decoration: underline;
