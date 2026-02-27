@@ -16,9 +16,6 @@ description: Thoughts on AI, Agents, RL, ML, and Data Science
       <article class="blog-card reveal">
         <div class="blog-card-meta">
           <time>{{ post.date | date: "%B %d, %Y" }}</time>
-          {% if post.categories.size > 0 %}
-          <span class="blog-card-category">{{ post.categories | first }}</span>
-          {% endif %}
         </div>
         <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
         {% if post.description %}
